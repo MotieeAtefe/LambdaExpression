@@ -10,14 +10,22 @@ namespace LambdaExpression
           {
               new Employee { Id=1, Name = "John", Salary = 3000 },
               new Employee { Id=2, Name = "Alic", Salary = 500 },
-              new Employee { Id=3, Name = "Bob", Salary = 25000 },
-              new Employee { Id=4, Name = "Eve", Salary = 7000 },
+              new Employee { Id=3, Name = "Bob",  Salary = 25000 },
+              new Employee { Id=4, Name = "Eve",  Salary = 7000 },
 
           };
 
             Console.WriteLine("orginal list of employee");
             DisplayEmployees(employees);
             var sortedByName = employees.OrderBy(x => x.Name).ToList();
+            Console.WriteLine("sorted list of employee By name");
+            DisplayEmployees(sortedByName);
+            var sortedBySalary = employees.OrderBy(x =>x.Salary).ToList();
+            Console.WriteLine("sorted list of employee By Salary");
+            DisplayEmployees(sortedBySalary);
+
+
+
 
 
 
