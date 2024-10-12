@@ -34,7 +34,7 @@ namespace LambdaExpression
         {
             foreach (var employee in employees) 
             {
-                Console.WriteLine($"ID: {employee.Id}, Name: {employee.Name},"+$"Salary: {employee.Salary}$");
+                Console.WriteLine($"ID: {employee.Id}, Name: {employee.Name}"+ $"Salary: {employee.Salary:C}");
             }
             Console.WriteLine();
 
